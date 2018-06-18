@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjektAdamczykPUM.App">
+	<Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="PrimaryColor">#ddb218</Color>
+            <Color x:Key="CounterColor">#EEEEEF</Color>
+            <Color x:Key="BtnColor">#4c70ab</Color>
+            <Color x:Key="BtnColorMinus">#FFBD00</Color>
+            <Color x:Key="BtnColorPlus">#00FFBD</Color>
+        </ResourceDictionary>
+    </Application.Resources>
+
+</Application>
+    

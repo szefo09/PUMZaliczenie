@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjektAdamczykPUM.Views.CounterPage">
+    <StackLayout Rotation="180" BackgroundColor="{StaticResource CounterColor}">
+        
+        <StackLayout Orientation="Horizontal" Rotation="180" VerticalOptions="FillAndExpand">
+            <Button Text="-"  Command="{Binding LpRed}"  CommandParameter="1" BackgroundColor="{StaticResource BtnColorMinus}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"></Button>
+            <Button Text="+"  Command="{Binding LpInc}" CommandParameter="1" BackgroundColor="{StaticResource BtnColorPlus}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"></Button>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" Rotation="180" VerticalOptions="Start" >
+            <Label Text="Player 1 Life points: "  HorizontalOptions="Start"/>
+            <Label Text="{Binding LP1}" FontSize="Large"  HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+
+        <Grid HorizontalOptions="FillAndExpand" Rotation="180">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="33.33*" />
+                <ColumnDefinition Width="33.33*" />
+                <ColumnDefinition Width="33.33*" />
+            </Grid.ColumnDefinitions>
+            <Button Text="Reset Duel" Font="Small" Command="{Binding Reset}" Grid.Column="0" HorizontalOptions="FillAndExpand"/>
+            <Button Text="DiceRoll" Font="Small" Command="{Binding DiceRoll}" Grid.Column="1" HorizontalOptions="FillAndExpand"/>
+            <Button Text="CoinFlip" Font="Small" Command="{Binding CoinFlip}" Grid.Column="2" HorizontalOptions="FillAndExpand"/>
+        </Grid>
+
+
+
+        <StackLayout  Orientation="Horizontal" VerticalOptions="Start">
+            <Label Text="Player 2 Life points: " HorizontalOptions="Start"/>
+            <Label Text="{Binding LP2}" HorizontalOptions="CenterAndExpand"/>
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand">
+            <Button Text="-" Command="{Binding LpRed}" CommandParameter="2" BackgroundColor="{StaticResource BtnColorMinus}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"></Button>
+            <Button Text="+"  Command="{Binding LpInc}" CommandParameter="2" BackgroundColor="{StaticResource BtnColorPlus}"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"></Button>
+        </StackLayout>
+        
+    </StackLayout>
+</ContentPage>
