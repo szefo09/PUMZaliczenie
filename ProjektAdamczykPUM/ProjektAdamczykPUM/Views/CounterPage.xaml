@@ -29,7 +29,7 @@
 
         <StackLayout  Orientation="Horizontal" VerticalOptions="Start">
             <Label Text="Player 2 Life points: " HorizontalOptions="Start"/>
-            <Label Text="{Binding LP2}" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="{Binding LP2}" FontSize="Large" HorizontalOptions="CenterAndExpand"/>
         </StackLayout>
         
         <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand">
