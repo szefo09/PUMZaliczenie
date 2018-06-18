@@ -15,9 +15,21 @@ namespace ProjektAdamczykPUM.ViewModels
         public PlayerLP P { get; set; }
         public Command LpChange { get; set; }
         public int Amount { get; set; }
+        public string Sign { get; set; }
 		public LPValueViewModel (string player, bool decrease)
 		{
             FindPlayer(player);
+
+            if (decrease)
+            {
+                Sign = "-";
+            }
+            else
+            {
+                Sign = "+";
+            }
+            RaisePropertyChanged(nameof(String));
+            
             LpChange = new Command(() => {
                 try
                 {

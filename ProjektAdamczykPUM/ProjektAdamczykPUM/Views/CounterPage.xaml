@@ -20,9 +20,9 @@
                 <ColumnDefinition Width="33.33*" />
                 <ColumnDefinition Width="33.33*" />
             </Grid.ColumnDefinitions>
-            <Button Text="Reset Duel" Font="Small" Command="{Binding Reset}" Grid.Column="0" HorizontalOptions="FillAndExpand"/>
-            <Button Text="DiceRoll" Font="Small" Command="{Binding DiceRoll}" Grid.Column="1" HorizontalOptions="FillAndExpand"/>
-            <Button Text="CoinFlip" Font="Small" Command="{Binding CoinFlip}" Grid.Column="2" HorizontalOptions="FillAndExpand"/>
+            <Button Text="Reset Duel" Font="Small" BackgroundColor="{StaticResource BtnColor}" Command="{Binding Reset}" Grid.Column="0" HorizontalOptions="FillAndExpand"/>
+            <Button Text="DiceRoll" Font="Small" BackgroundColor="{StaticResource BtnColor}" Command="{Binding DiceRoll}" Grid.Column="1" HorizontalOptions="FillAndExpand"/>
+            <Button Text="CoinFlip" Font="Small" BackgroundColor="{StaticResource BtnColor}" Command="{Binding CoinFlip}" Grid.Column="2" HorizontalOptions="FillAndExpand"/>
         </Grid>
 
 
